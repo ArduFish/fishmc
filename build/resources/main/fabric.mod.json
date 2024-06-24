@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "fishmc",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "FishMC",
 	"description": "FishMC",
 	"authors": [
