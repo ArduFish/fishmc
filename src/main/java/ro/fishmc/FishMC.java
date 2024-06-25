@@ -27,6 +27,15 @@ public class FishMC implements ModInitializer {
 									StatusEffects.WITHER,
 									3600,
 									1)));
+	public static final Potion BLINDNESS =
+			Registry.register(
+					Registries.POTION,
+					new Identifier("fishmc", "blindness"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.BLINDNESS,
+									3600,
+									0)));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
