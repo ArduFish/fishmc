@@ -36,6 +36,24 @@ public class FishMC implements ModInitializer {
 									StatusEffects.BLINDNESS,
 									3600,
 									0)));
+	public static final Potion GLOWING =
+			Registry.register(
+					Registries.POTION,
+					new Identifier("fishmc", "glowing"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.GLOWING,
+									800,
+									0)));
+	public static final Potion LEVITATION =
+			Registry.register(
+					Registries.POTION,
+					new Identifier("fishmc", "levitation"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.LEVITATION,
+									3600,
+									0)));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
