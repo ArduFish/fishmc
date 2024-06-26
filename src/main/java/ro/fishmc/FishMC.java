@@ -54,6 +54,10 @@ public class FishMC implements ModInitializer {
 									StatusEffects.LEVITATION,
 									3600,
 									0)));
+	public static final Potion STUNNED =
+			Registry.register(
+					Registries.POTION,
+					new Identifier("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 200, 200)}));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.

@@ -14,5 +14,10 @@
   "item.minecraft.potion.effect.levitation": "Potion of Levitation",
   "item.minecraft.tipped_arrow.effect.levitation": "Tipped Arrow of Levitation",
   "item.minecraft.splash_potion.effect.levitation": "Splash Potion of Levitation",
-  "item.minecraft.lingering_potion.effect.levitation": "Lingering Potion of Levitation"
+  "item.minecraft.lingering_potion.effect.levitation": "Lingering Potion of Levitation",
+  "potion.potency.200": "200",
+  "item.minecraft.potion.effect.stunned": "Potion of Stunning",
+  "item.minecraft.tipped_arrow.effect.stunned": "Tipped Arrow of Stunning",
+  "item.minecraft.splash_potion.effect.stunned": "Splash Potion of Stunning",
+  "item.minecraft.lingering_potion.effect.stunned": "Lingering Potion of Stunning"
 }
