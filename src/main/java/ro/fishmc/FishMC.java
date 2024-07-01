@@ -58,6 +58,10 @@ public class FishMC implements ModInitializer {
 			Registry.register(
 					Registries.POTION,
 					new Identifier("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
+	public static final Potion SHULKERCRAFT =
+			Registry.register(
+					Registries.POTION,
+					new Identifier("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 5)}));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
