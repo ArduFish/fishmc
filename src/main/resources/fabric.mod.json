@@ -3,7 +3,7 @@
 	"id": "fishmc",
 	"version": "${version}",
 	"name": "FishMC",
-	"description": "FishMC",
+	"description": "The official FishMC mod",
 	"authors": [
 		"ARaspberry523"
 	],
