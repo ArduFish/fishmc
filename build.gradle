@@ -19,8 +19,6 @@ repositories {
 	maven {
         name 'Xander Maven'
         url 'https://maven.isxander.dev/releases'
-    	}
-	maven {
         name 'xStopho Mods'
         url 'https://raw.githubusercontent.com/Stein-N/resources/main/maven'
 	}
