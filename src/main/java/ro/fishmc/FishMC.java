@@ -68,6 +68,6 @@ public class FishMC implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
-		//BrewingRecipeRegistry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
+		Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
 	}
 }
