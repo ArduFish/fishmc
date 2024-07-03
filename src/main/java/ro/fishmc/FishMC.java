@@ -69,8 +69,4 @@ public class FishMC implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
-		/*ConfigBuilder builder = ConfigBuilder.create()
-        *.setParentScreen(parent)
-        *.setTitle(new TranslatableText("title.fishmc.config"));
-	*}*/
 }
