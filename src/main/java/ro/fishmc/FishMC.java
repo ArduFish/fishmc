@@ -21,7 +21,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion DECAY =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "decay"),
+					Identifier.of("fishmc", "decay"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.WITHER,
@@ -30,7 +30,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion BLINDNESS =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "blindness"),
+					Identifier.of("fishmc", "blindness"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.BLINDNESS,
@@ -39,7 +39,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion GLOWING =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "glowing"),
+					Identifier.of("fishmc", "glowing"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.GLOWING,
@@ -48,7 +48,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion LEVITATION =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "levitation"),
+					Identifier.of("fishmc", "levitation"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.LEVITATION,
@@ -57,11 +57,11 @@ public class FishMC implements ModInitializer {
 	public static final Potion STUNNED =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
+					Identifier.of("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
 	public static final Potion SHULKERCRAFT =
 			Registry.register(
 					Registries.POTION,
-					new Identifier("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 5)}));
+					Identifier.of("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 5)}));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
