@@ -30,13 +30,21 @@
 		}
 	],
 	"custom": {
-                "fstats": 62
+                "fstats": 62,
+		"duckyupdater": {
+                        //Mod modrinth ID from project page
+                        "modrinthId": "JOJwCjjz",
+                        // Optional (release, beta, alpha)
+                        // Default: release
+                        "type": "release"
+                }
         },
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": ">=1.21",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"ducky-updater": "*"
 	},
 	"suggests": {
 		"fstats-api": "*"
