@@ -3,7 +3,7 @@
 	"id": "fishmc",
 	"version": "${version}",
 	"name": "FishMC",
-	"description": "The official FishMC mod",
+	"description": "FishMC",
 	"authors": [
 		"ARaspberry523"
 	],
@@ -29,13 +29,16 @@
 			"environment": "client"
 		}
 	],
+	"custom": {
+                "fstats": 62
+        }
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": ">=1.20.6",
+		"minecraft": ">=1.21",
 		"java": ">=21",
-		"fabric-api": "*",
-		"yet_another_config_lib_v3": "*"
+		"fabric-api": "*"
 	},
 	"suggests": {
+		"fstats-api": "*"
 	}
 }
