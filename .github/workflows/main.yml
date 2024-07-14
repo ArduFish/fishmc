@@ -5,16 +5,14 @@
 
 name: build
 on: [pull_request, push, workflow_dispatch]
-env:                                              #Environment variables that can later be referenced using ${{ env.MINECRAFT_VERSION }}. These are useful for repeating information and allow for quick changes for new mod updates
-  MINECRAFT_VERSION: 1.19.2                        
-  JAVA_VERSION: 17
+
 jobs:
   build:
     strategy:
       matrix:
         # Use these Java versions
         java: [
-          21   # Current Java LTS
+          21,    # Current Java LTS
         ]
     runs-on: ubuntu-22.04
     steps:
@@ -37,24 +35,3 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
-
-        - name: Publish (CurseForge/Modrinth/GitHub)
-          uses: Kir-Antipov/mc-publish@v3.2                                   #The specified MC-Publish GitHub Action in the version 3.2
-          with:
-          #curseforge-id: 123456                                             #The id of your CurseForge project
-          #curseforge-token: "${{env.CURSEFORGE_TOKEN}}"
-          
-          modrinth-id: 1q2w3e4r                                             #The id of your modrinth project
-          modrinth-token: "${{secret.RINTHMOD}}"
-          
-          #github-tag: "v${{env.VERSION}}"
-          #github-token: "${{env.GITHUB_TOKEN}}"
-
-          name: "v1.5.0.0"                             
-          version: "1.5.0.0"
-          version-type: release
-          changelog-file: CHANGELOG.md                                      #The file in which the changes of your new update are specified (the path starts at your project root)
-
-          loaders: fabric, quilt
-          game-versions: "1.21"
-          java: "21"
