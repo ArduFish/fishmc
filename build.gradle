@@ -4,7 +4,7 @@ plugins {
 	//id "com.modrinth.minotaur" version "2.+"
 }
 
-import com.modrinth.minotaur.dependencies.ModDependency
+//import com.modrinth.minotaur.dependencies.ModDependency
  
 /*modrinth {
     token = '${{ secrets.RINTHMOD }}' // Please use an environment variable for this! The default is `$MODRINTH_TOKEN`.
