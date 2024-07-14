@@ -1,12 +1,12 @@
 plugins {
 	id 'fabric-loom' version '1.7-SNAPSHOT'
 	id 'maven-publish'
-	id "com.modrinth.minotaur" version "2.+"
+	//id "com.modrinth.minotaur" version "2.+"
 }
 
 import com.modrinth.minotaur.dependencies.ModDependency
  
-modrinth {
+/*modrinth {
     token = '${{ secrets.RINTHMOD }}' // Please use an environment variable for this! The default is `$MODRINTH_TOKEN`.
     projectId = 'AABBCCDD' // The ID of your Modrinth project. Slugs will not work.
     versionNumber = '1.0.0' // The (preferably SemVer) version of the mod. If not specified, it'll use the `version` declaration
@@ -18,7 +18,7 @@ modrinth {
             new ModDependency('P7dR8mSH', 'required') // Creates a new required dependency on Fabric API
     ]
 }
-
+*/
 version = project.mod_version
 group = project.maven_group
 
