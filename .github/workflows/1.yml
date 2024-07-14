@@ -51,3 +51,6 @@ jobs:
           loaders: fabric, quilt
           game-versions: "${{env.MINECRAFT_VERSION}}"
           java: "${{env.JAVA_VERSION}}"
+
+          dependencies: |
+              fstats-api(embedded)
