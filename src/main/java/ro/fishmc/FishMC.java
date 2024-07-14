@@ -1,6 +1,6 @@
 package ro.fishmc;
 
-import net.fabricmc.*;
+import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
