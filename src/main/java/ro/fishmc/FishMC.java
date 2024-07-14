@@ -1,6 +1,6 @@
 package ro.fishmc;
 
-import net.fabricmc.api.ModInitializer;
+import net.fabricmc.*;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -69,5 +69,16 @@ public class FishMC implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.WATER,
+					// Ingredient
+					Items.POTATO,
+					// Output potion.
+					RegistryEntry.of(DECAY)
+			);
+		});
+	}
 	}
 }
