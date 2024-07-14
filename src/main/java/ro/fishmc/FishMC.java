@@ -69,7 +69,7 @@ public class FishMC implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
-		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+		/*FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
 					// Input potion.
 					Potions.WATER,
@@ -79,5 +79,5 @@ public class FishMC implements ModInitializer {
 					RegistryEntry.of(DECAY)
 			);
 		});
-	}
+	*/}
 }
