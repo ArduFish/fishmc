@@ -7,7 +7,7 @@ env:
   JAVA_VERSION: 21      
   VERSION: 1.5.0.0-1.21  
   RELEASE_NAME: 1.5.0.0-1.21
-  MODRINTH_TOKEN: ${{ secrets.PUBLISH_MODRINTH_TOKEN }}
+  MODRINTH_TOKEN: ${{ secrets.RINTHMOD }}
 
 permissions:
   contents: write
