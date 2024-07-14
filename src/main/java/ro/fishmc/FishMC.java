@@ -80,5 +80,4 @@ public class FishMC implements ModInitializer {
 			);
 		});
 	}
-	}
 }
