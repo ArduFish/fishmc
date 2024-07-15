@@ -43,6 +43,9 @@ repositories {
 	maven {
             url "https://api.modrinth.com/maven"
         }
+	maven {
+            url "https://maven.pkg.github.com/ArduFish123/fish-lib"
+	}
 }
 
 loom {
@@ -71,6 +74,7 @@ dependencies {
 	//}
 	include(modImplementation("maven.modrinth:fstats:2023.12.3"))
 	include(modImplementation("maven.modrinth:ducky-updater-lib:2023.10.1"))
+	include(modImplementation("eu.raspberrymods.fishlib:fish-lib:1.0.0.0"))
 }
 
 processResources {
