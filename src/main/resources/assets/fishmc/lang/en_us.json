@@ -19,5 +19,9 @@
   "item.minecraft.potion.effect.stunned": "Potion of Stunning",
   "item.minecraft.tipped_arrow.effect.stunned": "Tipped Arrow of Stunning",
   "item.minecraft.splash_potion.effect.stunned": "Splash Potion of Stunning",
-  "item.minecraft.lingering_potion.effect.stunned": "Lingering Potion of Stunning"
+  "item.minecraft.lingering_potion.effect.stunned": "Lingering Potion of Stunning",
+  "item.minecraft.potion.effect.shulkercraft": "Potion of Shulkercraft",
+  "item.minecraft.tipped_arrow.effect.shulkercraft": "Tipped Arrow of Shulkercraft",
+  "item.minecraft.splash_potion.effect.shulkercraft": "Splash Potion of Shulkercraft",
+  "item.minecraft.lingering_potion.effect.shulkercraft": "Lingering Potion of Shulkercraft"
 }
