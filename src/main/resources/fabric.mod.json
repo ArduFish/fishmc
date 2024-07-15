@@ -33,13 +33,15 @@
                 "fstats": 62,
 		"mc-publish": {
                     "dependencies": [
-                        "fish-lib(embedded){modrinth:embedded-dependency-fabric}"
+                        "fish-lib(embedded){modrinth:embedded-dependency-fabric}",
+			"fabric-api(required){modrinth:required-dependency-fabric}",
+			"fstats-api(embedded){modrinth:embedded-dependency-fabric}"
 		    ]
 		}
         },
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": ">=1.21",
+		"minec"fish-lib(embedded){modrinth:embedded-dependency-fabric}",raft": ">=1.21",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
