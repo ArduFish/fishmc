@@ -30,7 +30,12 @@
 		}
 	],
 	"custom": {
-                "fstats": 62
+                "fstats": 62,
+		"mc-publish": {
+                    "dependencies": [
+                        "fish-lib(embedded){modrinth:embedded-dependency-fabric}"
+		    ]
+		}
         },
 	"depends": {
 		"fabricloader": ">=0.15.11",
