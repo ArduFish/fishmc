@@ -36,7 +36,10 @@ jobs:
 
       - name: Build
         run: ./gradlew clean build
-        
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_ACTOR: ${{ secrets.ACTOR }}
+          
       - name: Publish (CurseForge/Modrinth/GitHub)
         uses: Kir-Antipov/mc-publish@v3                                   
         with:
