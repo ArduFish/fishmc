@@ -34,7 +34,6 @@
 		"mc-publish": {
                     "dependencies": [
                         "fish-lib(embedded){modrinth:embedded-dependency-fabric}",
-			"fabric-api(required){modrinth:required-dependency-fabric}",
 			"fstats-api(embedded){modrinth:embedded-dependency-fabric}"
 		    ]
 		}
