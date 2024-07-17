@@ -1,10 +1,13 @@
 package ro.fishmc;
 
+import eu.raspberrymods.fishlib.ObsidianTool;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.item.SwordItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
@@ -13,10 +16,13 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static net.minecraft.item.Items.*;
+
 public class FishMC implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
+	public static final String MOD_ID = "fishmc";
     public static final Logger LOGGER = LoggerFactory.getLogger("fishmc");
 	public static final Potion DECAY =
 			Registry.register(
@@ -68,6 +74,7 @@ public class FishMC implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
+		ro.fishmc.ModItems.initialize();
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
 		/*FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
