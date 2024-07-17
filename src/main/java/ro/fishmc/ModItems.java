@@ -1,11 +1,14 @@
 package ro.fishmc;
 
 import eu.raspberrymods.fishlib.ObsidianTool;
+import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import static net.minecraft.item.Items.register;
 
@@ -20,8 +23,11 @@ public class ModItems {
         // Return the registered item!
         return registeredItem;
     }
-    public static final Item OBSIDIAN_CLAYMORE = register(new SwordItem(ObsidianTool.INSTANCE, new Item.Settings()), "obsidian_claymore");
 
+    public static final Item OBSIDIAN_CLAYMORE = register(new SwordItem(ObsidianTool.INSTANCE, new Item.Settings().maxCount(1).fireproof().attributeModifiers(
+            SwordItem.createAttributeModifiers(
+                    ObsidianTool.INSTANCE,
+                    15, -3f))), "obsidian_claymore");
     public static void initialize() {
     }
 }
