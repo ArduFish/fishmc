@@ -3,6 +3,7 @@ package ro.fishmc;
 import eu.raspberrymods.fishlib.ObsidianTool;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
@@ -12,6 +13,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,7 +69,47 @@ public class FishMC implements ModInitializer {
 	public static final Potion SHULKERCRAFT =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 5)}));
+					Identifier.of("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 2)}));
+	public static final Potion CRAFTABLE_DECAY =
+			Registry.register(
+					Registries.POTION,
+					Identifier.of("fishmc", "decay"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.WITHER,
+									400,
+									1)));
+	public static final Potion CRAFTABLE_BLINDNESS =
+			Registry.register(
+					Registries.POTION,
+					Identifier.of("fishmc", "blindness"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.BLINDNESS,
+									400,
+									0)));
+	public static final Potion CRAFTABLE_GLOWING =
+			Registry.register(
+					Registries.POTION,
+					Identifier.of("fishmc", "glowing"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.GLOWING,
+									400,
+									0)));
+	public static final Potion CRAFTABLE_LEVITATION =
+			Registry.register(
+					Registries.POTION,
+					Identifier.of("fishmc", "levitation"),
+					new Potion(
+							new StatusEffectInstance(
+									StatusEffects.LEVITATION,
+									400,
+									0)));
+	public static final Potion CRAFTABLE_STUNNED =
+			Registry.register(
+					Registries.POTION,
+					Identifier.of("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -76,15 +118,65 @@ public class FishMC implements ModInitializer {
 		LOGGER.info("Welcome to FishMC!");
 		ro.fishmc.ModItems.initialize();
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
-		/*FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
 					// Input potion.
-					Potions.WATER,
+					Potions.AWKWARD,
 					// Ingredient
-					Items.POTATO,
+					Items.WITHER_ROSE,
 					// Output potion.
-					RegistryEntry.of(DECAY)
+					RegistryEntry.of(CRAFTABLE_DECAY)
 			);
 		});
-	*/}
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.AWKWARD,
+					// Ingredient
+					Items.FERMENTED_SPIDER_EYE,
+					// Output potion.
+					RegistryEntry.of(CRAFTABLE_BLINDNESS)
+			);
+		});
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.AWKWARD,
+					// Ingredient
+					Items.GLOW_BERRIES,
+					// Output potion.
+					RegistryEntry.of(CRAFTABLE_GLOWING)
+			);
+		});
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.AWKWARD,
+					// Ingredient
+					Items.SHULKER_SHELL,
+					// Output potion.
+					RegistryEntry.of(CRAFTABLE_LEVITATION)
+			);
+		});
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.AWKWARD,
+					// Ingredient
+					Items.OMINOUS_BOTTLE,
+					// Output potion.
+					RegistryEntry.of(CRAFTABLE_STUNNED)
+			);
+		});
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+			builder.registerPotionRecipe(
+					// Input potion.
+					Potions.AWKWARD,
+					// Ingredient
+					Items.SHULKER_BOX,
+					// Output potion.
+					RegistryEntry.of(SHULKERCRAFT)
+			);
+		});
+	}
 }

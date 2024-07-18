@@ -27,7 +27,7 @@ public class ModItems {
     public static final Item OBSIDIAN_CLAYMORE = register(new SwordItem(ObsidianTool.INSTANCE, new Item.Settings().maxCount(1).fireproof().attributeModifiers(
             SwordItem.createAttributeModifiers(
                     ObsidianTool.INSTANCE,
-                    15, -3f))), "obsidian_claymore");
+                    1, -3f))), "obsidian_claymore");
     public static void initialize() {
     }
 }
