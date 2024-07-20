@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "fishmc:obsidian_claymore",
+      "count": 1
+    },
+    "title": "End Run",
+    "description": "Defeat an enderman with an obsidian claymore.",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/kill_a_mob",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "items": "fishmc:obsidian_claymore"
+            }
+          }
+        },
+        "entity": {
+          "type": "minecraft:enderman"
+        }
+      }
+    }
+  }
+}
