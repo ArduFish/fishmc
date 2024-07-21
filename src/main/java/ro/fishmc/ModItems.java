@@ -1,16 +1,11 @@
 package ro.fishmc;
 
 import eu.raspberrymods.fishlib.ObsidianTool;
-import net.minecraft.component.type.AttributeModifiersComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Rarity;
-
-import static net.minecraft.item.Items.register;
 
 public class ModItems {
     public static Item register(Item item, String id) {
