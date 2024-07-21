@@ -30,19 +30,18 @@
 		}
 	],
 	"custom": {
-                "fstats": 62,
-		"mc-publish": {
-                    "dependencies": [
-                        "fish-lib(embedded){modrinth:embedded-dependency-fabric}",
-			"fstats-api(embedded){modrinth:embedded-dependency-fabric}"
-		    ]
+		"fstats": 62,
+		"duckyupdater": {
+			"modrinthId": "JOJwCjjz",
+			"type": "release",
+			"featured": true
 		}
         },
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": ">=1.21",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": ">=0.100.7+1.21"
 	},
 	"suggests": {
 		"fstats-api": "*"
