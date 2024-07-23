@@ -31,8 +31,8 @@ public class FishMC implements ModInitializer {
 					Registries.POTION,
 					Identifier.of("fishmc", "decay"),
 					new Potion(
-							new MobEffectInstance(
-									MobEffects.WITHER,
+							new StatusEffectInstance(
+									StatusEffects.WITHER,
 									3600,
 									1)));
 	public static final Potion BLINDNESS =
@@ -40,8 +40,8 @@ public class FishMC implements ModInitializer {
 					Registries.POTION,
 					Identifier.of("fishmc", "blindness"),
 					new Potion(
-							new MobEffectInstance(
-									MobEffects.BLINDNESS,
+							new StatusEffectInstance(
+									StatusEffects.BLINDNESS,
 									3600,
 									0)));
 	public static final Potion GLOWING =
@@ -49,8 +49,8 @@ public class FishMC implements ModInitializer {
 					Registries.POTION,
 					Identifier.of("fishmc", "glowing"),
 					new Potion(
-							new MobEffectInstance(
-									MobEffects.GLOWING,
+							new StatusEffectInstance(
+									StatusEffects.GLOWING,
 									800,
 									0)));
 	public static final Potion LEVITATION =
@@ -58,18 +58,18 @@ public class FishMC implements ModInitializer {
 					Registries.POTION,
 					Identifier.of("fishmc", "levitation"),
 					new Potion(
-							new MobEffectInstance(
-									MobEffects.LEVITATION,
+							new StatusEffectInstance(
+									StatusEffects.LEVITATION,
 									3600,
 									0)));
 	public static final Potion STUNNED =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "stunned"),new Potion(new MobEffectInstance[]{new MobEffectInstance(MobEffects.SLOWNESS, 400, 200), new MobEffectInstance(MobEffects.WEAKNESS, 400, 200), new MobEffectInstance(MobEffects.MINING_FATIGUE, 400, 200)}));
+					Identifier.of("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
 	public static final Potion SHULKERCRAFT =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "shulkercraft"),new Potion(new MobEffectInstance[]{new MobEffectInstance(MobEffects.SLOWNESS, 200, 200), new MobEffectInstance(MobEffects.RESISTANCE, 200, 2)}));
+					Identifier.of("fishmc", "shulkercraft"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 200), new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 2)}));
 	public static final Potion CRAFTABLE_DECAY =
 			Registry.register(
 					Registries.POTION,
