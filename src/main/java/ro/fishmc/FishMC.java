@@ -73,7 +73,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion CRAFTABLE_DECAY =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "decay"),
+					Identifier.of("fishmc", "craftable_decay"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.WITHER,
@@ -82,7 +82,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion CRAFTABLE_BLINDNESS =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "blindness"),
+					Identifier.of("fishmc", "craftable_blindness"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.BLINDNESS,
@@ -91,7 +91,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion CRAFTABLE_GLOWING =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "glowing"),
+					Identifier.of("fishmc", "craftable_glowing"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.GLOWING,
@@ -100,7 +100,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion CRAFTABLE_LEVITATION =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "levitation"),
+					Identifier.of("fishmc", "craftable_levitation"),
 					new Potion(
 							new StatusEffectInstance(
 									StatusEffects.LEVITATION,
@@ -109,7 +109,7 @@ public class FishMC implements ModInitializer {
 	public static final Potion CRAFTABLE_STUNNED =
 			Registry.register(
 					Registries.POTION,
-					Identifier.of("fishmc", "stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
+					Identifier.of("fishmc", "craftable_stunned"),new Potion(new StatusEffectInstance[]{new StatusEffectInstance(StatusEffects.SLOWNESS, 400, 200), new StatusEffectInstance(StatusEffects.WEAKNESS, 400, 200), new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 400, 200)}));
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
