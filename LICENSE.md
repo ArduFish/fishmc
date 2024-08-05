@@ -1,4 +1,4 @@
-### © < license owner > < year >
+### © ArduFish123 2024
 
 ### FISH PROTECTIVE LICENSE 1.0
 
