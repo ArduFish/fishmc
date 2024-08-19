@@ -1,0 +1,38 @@
+{
+  "witherboss": {
+    "subtitle": "subtitles.witherboss",
+    "sounds": [
+      {
+        "name": "boss_music_mod:witherboss",
+        "stream": false
+      }
+    ]
+  },
+  "evoker": {
+    "subtitle": "subtitles.evoker",
+    "sounds": [
+      {
+        "name": "boss_music_mod:evoker",
+        "stream": false
+      }
+    ]
+  },
+  "elderguard": {
+    "subtitle": "subtitles.elderguard",
+    "sounds": [
+      {
+        "name": "boss_music_mod:elderguard",
+        "stream": false
+      }
+    ]
+  },
+  "enderdragonbosstheme": {
+    "subtitle": "subtitles.enderdragonbosstheme",
+    "sounds": [
+      {
+        "name": "boss_music_mod:enderdragonboss",
+        "stream": false
+      }
+    ]
+  }
+}
