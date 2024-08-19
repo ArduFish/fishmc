@@ -117,7 +117,7 @@ public class FishMC implements ModInitializer {
 		LOGGER.info("Welcome to FishMC!");
 		var bow = new CustomBow(
 				new Item.Settings().maxDamage(150),
-				new RangedConfig(3, -0.3F, 5),
+				new RangedConfig(3, -0.7F, 5),
 				() -> Ingredient.ofItems(Items.OAK_WOOD)
 		);
 		Registry.register(
