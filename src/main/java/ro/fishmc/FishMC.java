@@ -1,6 +1,7 @@
 package ro.fishmc;
 
-import eu.raspberrymods.fishlib.ObsidianTool;
+import net.fabric_extras.ranged_weapon.api.CustomBow;
+import net.fabric_extras.ranged_weapon.api.RangedConfig;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
@@ -8,17 +9,15 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
-import net.minecraft.item.SwordItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import static net.minecraft.item.Items.*;
 
 public class FishMC implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -116,7 +115,18 @@ public class FishMC implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		LOGGER.info("Welcome to FishMC!");
-		ro.fishmc.ModItems.initialize();
+		var bow = new CustomBow(
+				new Item.Settings().maxDamage(300),
+				new RangedConfig(25, -0.5F, 15),
+				() -> Ingredient.ofItems(Items.OAK_WOOD)
+		);
+		Registry.register(
+				Registries.ITEM,
+				Identifier.of(FishMC.MOD_ID, "shortbow"),
+				bow
+		);
+		ModItems.initialize();
+		ModBows.initialize();
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(

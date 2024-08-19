@@ -1,0 +1,6 @@
+{
+    "parent": "fishmc:item/shortbow",
+    "textures": {
+        "layer0": "fishmc:item/shortbow_pulling_0"
+    }
+}
