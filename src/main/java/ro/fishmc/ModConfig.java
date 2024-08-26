@@ -9,5 +9,5 @@ import me.fzzyhmstrs.fzzy_config.validation.number.ValidatedDouble;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 
-public class ModConfig () {
+public class ModConfig extends Config {
 }
