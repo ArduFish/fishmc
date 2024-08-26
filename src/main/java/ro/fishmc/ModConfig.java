@@ -8,7 +8,7 @@ import me.fzzyhmstrs.fzzy_config.util.EnumTranslatable;
 import me.fzzyhmstrs.fzzy_config.validation.number.ValidatedDouble;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
-
+Config config = new Config();
 public class ModConfig extends Config {
   public boolean aBoolean = true;
   public JavaTestConfig() {
