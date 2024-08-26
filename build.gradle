@@ -78,7 +78,7 @@ dependencies {
 	include(modImplementation("maven.modrinth:ducky-updater-lib:2023.10.1"))
 	include(modImplementation "maven.modrinth:ranged-weapon-api:${project.ranged_weapon_api_version}")
 	// java
-        modImplementation "maven.modrinth:fzzy-config:${project.fzzyConfigVersion}"
+        //modImplementation "maven.modrinth:fzzy-config:${project.fzzyConfigVersion}"
 }
 
 processResources {
