@@ -36,7 +36,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build
-        run: ./gradlew clean build
+        run: ./gradlew clean build --scan
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GITHUB_ACTOR: ${{ secrets.ACTOR }}
