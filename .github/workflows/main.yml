@@ -28,7 +28,7 @@ jobs:
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: build
-        run: ./gradlew build
+        run: ./gradlew build --scan
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GITHUB_ACTOR: ${{ secrets.ACTOR }}
