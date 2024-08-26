@@ -46,6 +46,14 @@ repositories {
 	maven {
             url "https://repo.repsy.io/mvn/ardufish123/fish-lib"
 	}
+
+	repositories {
+    maven {
+        name 'Xander Maven'
+        url 'https://maven.isxander.dev/releases'
+    }
+}
+
 }
 
 loom {
@@ -79,6 +87,8 @@ dependencies {
 	include(modImplementation "maven.modrinth:ranged-weapon-api:${project.ranged_weapon_api_version}")
 	// java
         //modImplementation "maven.modrinth:fzzy-config:${project.fzzyConfigVersion}"
+        modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
+
 }
 
 processResources {
