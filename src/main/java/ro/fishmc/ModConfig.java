@@ -10,4 +10,8 @@ import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 
 public class ModConfig extends Config {
+  public boolean aBoolean = true;
+  public JavaTestConfig() {
+        super(Identifier.of("config_test","java_config"),"test");
+    }
 }
