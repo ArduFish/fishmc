@@ -46,14 +46,6 @@ repositories {
 	maven {
             url "https://repo.repsy.io/mvn/ardufish123/fish-lib"
 	}
-
-	repositories {
-    maven {
-        name 'Xander Maven'
-        url 'https://maven.isxander.dev/releases'
-    }
-}
-
 }
 
 loom {
@@ -85,10 +77,6 @@ dependencies {
 	modImplementation ('eu.raspberrymods.fishlib:fish-lib:1.2.0.0+1.21')
 	include(modImplementation("maven.modrinth:ducky-updater-lib:2023.10.1"))
 	include(modImplementation "maven.modrinth:ranged-weapon-api:${project.ranged_weapon_api_version}")
-	// java
-        //modImplementation "maven.modrinth:fzzy-config:${project.fzzyConfigVersion}"
-        modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
-
 }
 
 processResources {
