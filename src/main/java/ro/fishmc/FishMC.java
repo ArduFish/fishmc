@@ -126,7 +126,6 @@ public class FishMC implements ModInitializer {
 				bow
 		);
 		ModItems.initialize();
-		ModBows.initialize();
 		//Registry.registerPotionRecipe(Potions.WATER, Items.POTATO, DECAY);
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(
